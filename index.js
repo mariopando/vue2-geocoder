@@ -120,6 +120,6 @@ export default {
             getGoogleMapsApiKey() {
                 return this.googleMapsApiKey;
             }
-        },
+        }
     }
 }
