@@ -1,0 +1,117 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   '.',
+1 verbose cli   '--access',
+1 verbose cli   'public' ]
+2 info using npm@3.9.5
+3 info using node@v6.2.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/desarrollo/projects/vue2-geocoder',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/desarrollo/.npm/@mariopando/vue2-geocoder/1.0.3/package.tgz not in flight; packing
+9 verbose correctMkdir /home/desarrollo/.npm correctMkdir not in flight; initializing
+10 info lifecycle @mariopando/vue2-geocoder@1.0.3~prepublish: @mariopando/vue2-geocoder@1.0.3
+11 silly lifecycle @mariopando/vue2-geocoder@1.0.3~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/desarrollo/.npm/@mariopando/vue2-geocoder/1.0.3/package.tgz',
+12 verbose tar pack   '/home/desarrollo/projects/vue2-geocoder' ]
+13 verbose tarball /home/desarrollo/.npm/@mariopando/vue2-geocoder/1.0.3/package.tgz
+14 verbose folder /home/desarrollo/projects/vue2-geocoder
+15 verbose addLocalTarball adding from inside cache /home/desarrollo/.npm/@mariopando/vue2-geocoder/1.0.3/package.tgz
+16 verbose correctMkdir /home/desarrollo/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd @mariopando/vue2-geocoder@1.0.3
+18 verbose afterAdd /home/desarrollo/.npm/@mariopando/vue2-geocoder/1.0.3/package/package.json not in flight; writing
+19 verbose correctMkdir /home/desarrollo/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/desarrollo/.npm/@mariopando/vue2-geocoder/1.0.3/package/package.json written
+21 silly publish { name: '@mariopando/vue2-geocoder',
+21 silly publish   version: '1.0.3',
+21 silly publish   description: 'A vue 2 plugin to interact with google maps api',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/mariopando/vue2-geocoder.git' },
+21 silly publish   keywords:
+21 silly publish    [ 'vue2',
+21 silly publish      'vue2js',
+21 silly publish      'vue2geocoder',
+21 silly publish      'vue2-geocoder',
+21 silly publish      'geocoder',
+21 silly publish      'googlemaps',
+21 silly publish      'maps',
+21 silly publish      'google' ],
+21 silly publish   author: { name: 'Cody Moorhouse' },
+21 silly publish   license: 'MIT',
+21 silly publish   bugs: { url: 'https://github.com/mariopando/vue2-geocoder/issues' },
+21 silly publish   homepage: 'https://github.com/mariopando/vue2-geocoder#readme',
+21 silly publish   readme: '# Vue Geocoder\nA vue.js plugin to interact with google maps api.\n\n## How to initialize Vue Geocoder\nA vue 2 plugin to interact with google maps api that will query the google maps API to retrieve location results.\n\n```javascript\nimport Geocoder from "@mariopando/vue2-geocoder";\n\nVue.use(Geocoder, {\n    googleMapsApiKey: GOOGLE_MAPS_API_KEY\n});\n```\n## Usage\nGeneral usage: ```Vue.$geocoder.[FUNCTION_NAME]```\n\n##### Address Example\n```javascript\nVue.$geocoder.setDefaultMode(\'address\');      // this is default\nvar addressObj = {\n    address_line_1: \'1600 Amphitheatre Parkway\',\n    address_line_2: \'\',\n    city:           \'Mountain View\',\n    state:          \'CA\',               // province also valid\n    zip_code:       \'94043\',            // postal_code also valid\n    country:        \'United States\'\n}\nVue.$geocoder.send(addressObj, response => { console.log(response) });\n```\n\nIts important to note that even if your country is set in the address object to the specified country, it is still possible to pull results from other countries. If you want to limit the results to a specific country, you must set the country code in the geocoder.\n```javascript\nVue.$geocoder.setDefaultCountryCode(\'CA\');\n```\n\nIf you like define the response language use this option\n```javascript\nVue.$geocoder.setDefaultLanguage(\'es\');\n```\n[Click here for Country Codes](https://developers.google.com/maps/coverage)\n\n##### Lat Lng Example\n```javascript\nVue.$geocoder.setDefaultMode(\'lat-lng\');    // this is default\nvar latLngObj = {\n    lat: 37.421512,\n    lng: -122.084101\n}\nVue.$geocoder.send(latLngObj, response => { console.log(response) });\n```\n\n## License\nThis project is covered under the MIT License. Feel free to use it wherever you like.\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '40ad62c733e641c48aadadbbe496ef5ea6808971',
+21 silly publish   _id: '@mariopando/vue2-geocoder@1.0.3',
+21 silly publish   _shasum: 'c9d740aa7c2f7220a288fc3b82fea6ee23d6b425',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name @mariopando/vue2-geocoder
+24 silly mapToRegistry scope (from package name) @mariopando
+25 verbose mapToRegistry no registry URL found in name for scope @mariopando
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry data Result {
+28 silly mapToRegistry   raw: '@mariopando/vue2-geocoder',
+28 silly mapToRegistry   scope: '@mariopando',
+28 silly mapToRegistry   name: '@mariopando/vue2-geocoder',
+28 silly mapToRegistry   rawSpec: '',
+28 silly mapToRegistry   spec: 'latest',
+28 silly mapToRegistry   type: 'tag' }
+29 silly mapToRegistry uri https://registry.npmjs.org/@mariopando%2fvue2-geocoder
+30 verbose publish registryBase https://registry.npmjs.org/
+31 silly publish uploading /home/desarrollo/.npm/@mariopando/vue2-geocoder/1.0.3/package.tgz
+32 verbose request uri https://registry.npmjs.org/@mariopando%2fvue2-geocoder
+33 verbose request sending authorization for write operation
+34 info attempt registry request try #1 at 5:04:01 PM
+35 verbose request using bearer token for auth
+36 verbose request id e9b9deec692c390f
+37 http request PUT https://registry.npmjs.org/@mariopando%2fvue2-geocoder
+38 http 400 https://registry.npmjs.org/@mariopando%2fvue2-geocoder
+39 verbose headers { date: 'Tue, 20 Nov 2018 20:04:03 GMT',
+39 verbose headers   'content-type': 'application/json',
+39 verbose headers   'content-length': '87',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'set-cookie': [ '__cfduid=d9546e2a279c5c49c4cc7a6e599df8c681542744242; expires=Wed, 20-Nov-19 20:04:02 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+39 verbose headers   'cf-ray': '47cd85f97aba8576-SCL',
+39 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+39 verbose headers   vary: 'Accept-Encoding',
+39 verbose headers   server: 'cloudflare' }
+40 verbose request invalidating /home/desarrollo/.npm/registry.npmjs.org/_40mariopando_252fvue2-geocoder on PUT
+41 error publish Failed PUT 400
+42 verbose stack Error: Cannot publish over previously published version "1.0.3". : @mariopando/vue2-geocoder
+42 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+42 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+42 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+42 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+42 verbose stack     at emitTwo (events.js:106:13)
+42 verbose stack     at Request.emit (events.js:191:7)
+42 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+42 verbose stack     at emitOne (events.js:101:20)
+42 verbose stack     at Request.emit (events.js:188:7)
+42 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+43 verbose statusCode 400
+44 verbose pkgid @mariopando/vue2-geocoder
+45 verbose cwd /home/desarrollo/projects/vue2-geocoder
+46 error Linux 4.4.0-139-generic
+47 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish" "." "--access" "public"
+48 error node v6.2.2
+49 error npm  v3.9.5
+50 error code E400
+51 error Cannot publish over previously published version "1.0.3". : @mariopando/vue2-geocoder
+52 error If you need help, you may report this error at:
+52 error     <https://github.com/npm/npm/issues>
+53 verbose exit [ 1, true ]
