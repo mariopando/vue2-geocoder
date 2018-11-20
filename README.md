@@ -32,6 +32,11 @@ Its important to note that even if your country is set in the address object to 
 ```javascript
 Vue.$geocoder.setDefaultCountryCode('CA');
 ```
+
+If you like define the response language use this option
+```javascript
+Vue.$geocoder.setDefaultLanguage('es');
+```
 [Click here for Country Codes](https://developers.google.com/maps/coverage)
 
 ##### Lat Lng Example
